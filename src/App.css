@@ -7,8 +7,8 @@
   grid-template-rows: auto 1fr auto;
 }
 
-.truckInHeader{
-  height:100%
+.truckInHeader {
+  height: 100%;
 }
 
 /* Header */
@@ -30,7 +30,6 @@
   align-items: center;
   justify-content: center;
   padding: 2vmin;
-  /* gap: 2rem; */
 }
 
 /* Responsive main text area */
@@ -79,15 +78,36 @@
 @media only screen and (max-width: 750px) {
   .main {
     grid-template-columns: 1fr;
+    padding: 1rem; /* Reduced padding for mobile */
   }
 
   .maintextarea, .main-smaller-text {
     max-width: 100%;
+  }
+
+  .dividerContainer {
+    margin: 1rem 0; /* Reduced margin for mobile */
+  }
+
+  .contactContainer {
+    padding: 1rem; /* Reduced padding for mobile */
   }
 }
 
 @media only screen and (max-width: 500px) {
   .App-header {
     padding: 0 2%;
+  }
+
+  .main-img {
+    max-width: 100%; /* Allow the image to take full width on smaller screens */
+  }
+
+  .maintextarea {
+    margin-top: 1rem; /* Add a slight margin to ensure spacing is consistent */
+  }
+
+  .contactContainer {
+    padding: 0.5rem; /* Further reduce padding on smaller screens */
   }
 }
