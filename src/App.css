@@ -25,31 +25,31 @@
 
 /* Main content area */
 .main {
+  border:1px red solid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   padding: 2vmin;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 /* Responsive main text area */
 .maintextarea {
   font-size: clamp(20px, 4vw, 35px);
   font-weight: bold;
-  max-width: 25ch;
 }
 
 /* Main image styling */
 .main-img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
   object-fit: cover;
 }
 
 /* Smaller text styling */
 .main-smaller-text {
-  font-size: clamp(14px, 2vw, 20px);
+  font-size: clamp(16px, 2vw, 22px);
   font-weight: lighter;
   margin-top: 1rem;
 }
